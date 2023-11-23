@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  php:
+    build: ./.docker/php
+    volumes:
+      - ./php:/app
+      - ./.docker/php/php.ini-development:/usr/local/etc/php/php.ini-development
+
+  selenium:
+    build: ./.docker/selenium
+    ports:
+      - 4444:4444
+      - 5900:5900
