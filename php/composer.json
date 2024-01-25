@@ -4,6 +4,7 @@
     },
     "require": {
         "laravel/framework": "^10.0",
+        "orchestra/testbench": "*",
         "php-webdriver/webdriver": "^1.15"
     }
 }
